@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+}
+.container{
+    cursor: pointer;
+}
+span{
+    color: white;
+    display: inline-block;
+    font-size: 10rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+span:hover{
+    animation: jump 2s ease-in-out;
+}
+
+@keyframes jump{
+    0%{
+        transform: translate(0,0) rotate(180deg);
+    }
+    100%{
+        transform: scale(2.5) translate(0, -180px);
+    }
+}
